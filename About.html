@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Developer | About Me</title>
+    <link rel="stylesheet" href="css/About.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="img/log.png"></a>
+      <a href="index.html">  <div class="toggle" ><img src="img/toggle.png"></div></a>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Asad Ali <span>Front-End</span> Developer</h2>
+            <p> I am a hard working, motivated and enthusiastic in my working field. I always strive to achieve the
+                highest standard possible at any given task. Iam accustomed to working in a challenging fast-paced
+                environment. Particularly when im dealing with multiple projects and priorities at the same time. Im
+                Passionate and innovative young professional with an exemplary academic record with continuous learning
+                and professional development.</p>
+                <a href="#" class="play" onclick="toggle();"><img src="img/play.png">Watch Portfolio</a>
+        <div class="slide"></div>
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+            <li><a href="#"><img src="img/instagram.png"></a></li>
+        </ul>
+            </div>
+
+    </div>
+    <div class="trailer">
+        <video src="video/trailer.mp4" controls="true"></video>
+    <img src="img/close.png " class="close" onclick="toggle();">
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var trailer= document.querySelector('.trailer');
+            var video= document.querySelector('video');
+
+            trailer.classList.toggle('active');
+            video.currentTime=0;
+            video.pause();
+        }
+    </script>
+</body>
+
+</html>
